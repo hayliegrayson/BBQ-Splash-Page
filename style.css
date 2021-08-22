@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.intro {
+    background-image: url(img/bbq.jpg);
+    background-color: #555;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    background-blend-mode: multiply;
+    min-height: 50vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: auto;
+}
+
+h1 {
+    margin: 3em 0;
+    font-size: 3.8rem;
+    font-weight: 300;
+}
+
+.bold-text {
+    font-weight: 900;
+}
+
+h1 + p, 
+.upper-text, 
+h2 + p {
+    color: #F18119;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.upper-text {
+    margin-top: .3em;
+}
+
+.intro .upper-text {
+    order: -1;
+}
+
+.main-content {
+    margin-top: 3em;
+    min-height: 50vh;
+}
+
+h2 {
+    margin-bottom: .3em;
+    font-size: 2.6rem;
+}
+
+h2 + p {
+    margin-bottom: 1em;
+}
+
+.body-text {
+    color: #404040;
+    line-height: 1.5;
+}
+
+form {
+    margin: 1em auto 0 auto;
+    padding: 1em;
+    width: 80%;
+}
+
+input, button {
+    width: 100%;
+    border-radius: 3px;
+    font-size: 1.5rem;
+}
+
+input {
+    margin-bottom: 1em;
+    padding: .7em 1.5em;
+    text-align: inherit;
+    font-family: inherit;
+    border: 2px solid #404040;
+}
+
+input:focus {
+    border: 3px solid #000;
+}
+
+button {
+    padding: 1em 1.5em;
+    font-family: inherit;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+    background: linear-gradient(to left, #FF713B, #FFA51D);
+    color: #fff;
+    transition: color, transform 350ms;
+    transform: scale(1);
+}
+
+button:hover, 
+button:focus {
+    color: #000;
+    transform: scale(1.1);
+}
+
+.fine-print {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 609px) {
+    .flex-container {
+        display: flex;
+    }
+    .intro, .main-content {
+        width: 50%;
+        min-height: 100vh;
+    }
+    .main-content {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .intro h1 {
+        margin: 4em 0 .5em 0;
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    form {
+        width: 60%;
+    }
+    .body-text {
+        width: 70%;
+        margin: auto;
+    }
+   .container {
+       width: 80%;
+   }
+   h2 {
+       font-size: 3.5rem;
+   }
+}
